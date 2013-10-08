@@ -1,2 +1,2 @@
-conferencedashboard
+Conference Dashboard
 ===================

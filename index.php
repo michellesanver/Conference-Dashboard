@@ -36,7 +36,7 @@
 		<!-- Dynamic Widgetarea -->
 		<?php foreach($widgets as $widget): ?>
 
-			<div class="collapsible">
+			<div class="collapsible <?php if( $widget->isSortable() == false ): ?>not-sortable<?php endif; ?>">
 				<h3 class="collapsible"><?php echo $widget->getHeader(); ?></h3>
 				<div><?php echo $widget->getOutput(); ?></div>
 			</div>
